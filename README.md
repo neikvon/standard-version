@@ -8,6 +8,15 @@
 npm i --save-dev standard-version
 ```
 
+## Features
+
+Added two features:
+
+1. `"current"` config: (Optional) base version for bump
+1. `"target"` config: (Optional) target version for bump
+
+Note: `"target"` has a higher priority than `"current"`
+
 ## Code usage
 
 ```js
@@ -38,7 +47,8 @@ const standardVersion = require('standard-version')
   "skip": {},
   "dryRun": false,
   // new
-  "current": "1.0.1"
+  "current": "1.0.1",
+  "target": "2.0.0"
 }
 ```
 
